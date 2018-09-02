@@ -15,7 +15,7 @@ then just use it
 ```js
 var fastFreeze = require("fast-freeze");
 
-var testConfig = var C = {
+var testConfig = {
     name: 'John',
     surname: 'Johnson',
     age: 26,
@@ -31,7 +31,7 @@ var testConfig = var C = {
     ]
 };
 
-var frozenConfig = fastFreeze(C);
+var frozenConfig = fastFreeze(testConfig);
 
 console.log( frozenConfig("vehicles")[1] );
 console.log( testConfig["vehicles"][1] );
