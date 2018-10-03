@@ -1,4 +1,7 @@
 # fast-freeze
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/node-muneem/fast-freeze.svg)](https://greenkeeper.io/)
+
 Ugly but fast read only object
 
 This module actually don't freeze object but convert the object into nested functions. Hence accessing any propery seems ugly.
