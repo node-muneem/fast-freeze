@@ -23,4 +23,8 @@ function fastFreeze(config, secureChar, logger){
 
 }
 
-module.exports = fastFreeze;
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+  module.exports = fastFreeze;
+} else {
+  window.FastFreeze = fastFreeze;
+}
